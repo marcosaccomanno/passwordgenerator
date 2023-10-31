@@ -55,19 +55,19 @@ if __name__ == "__main__":
     number_of_numbers = int(input('Numbers: '))
     number_of_special = int(input('Special characters: '))
 
-    # initial counter
+    # sets initial counter
     character_counter = 1
 
     # initial password characters (empty)
     password = []
 
-    # generate characters
+    # generates characters
     uppercaseCharacters(character_counter)
     lowercaseCharacters(character_counter)
     numberCharacters(character_counter)
     specialCharacters(character_counter)
 
-    # shuffle password characters
+    # shuffles password characters
     password = shuffle(password)
 
     print(Fore.YELLOW + '--------------------------------------------' + Fore.RESET)
